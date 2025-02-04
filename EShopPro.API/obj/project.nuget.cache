@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Ap1+Ql7h5wQ=",
+  "dgSpecHash": "kKE5n3nn0+o=",
   "success": true,
   "projectFilePath": "D:\\My_Portfolio\\Website\\Back-end\\E-ShopPro\\EShopPro.API\\EShopPro.API.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\OS7\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\OS7\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\OS7\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
