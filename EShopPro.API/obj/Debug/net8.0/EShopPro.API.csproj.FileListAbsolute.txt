@@ -6,6 +6,12 @@ D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\bin\Debug\net8.0\EShopPr
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\bin\Debug\net8.0\EShopPro.API.runtimeconfig.json
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\bin\Debug\net8.0\EShopPro.API.dll
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\bin\Debug\net8.0\EShopPro.API.pdb
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\bin\Debug\net8.0\AutoMapper.dll
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\bin\Debug\net8.0\FluentValidation.dll
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\bin\Debug\net8.0\MediatR.dll
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\bin\Debug\net8.0\EShopPro.Application.dll
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\bin\Debug\net8.0\EShopPro.Domain.dll
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\bin\Debug\net8.0\EShopPro.Application.pdb
@@ -16,6 +22,7 @@ D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\obj\Debug\net8.0\EShopPr
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\obj\Debug\net8.0\EShopPro.API.AssemblyInfo.cs
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\obj\Debug\net8.0\EShopPro.API.csproj.CoreCompileInputs.cache
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\obj\Debug\net8.0\EShopPro.API.MvcApplicationPartsAssemblyInfo.cache
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\obj\Debug\net8.0\EShopPro.API.sourcelink.json
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\obj\Debug\net8.0\scopedcss\bundle\EShopPro.API.styles.css
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\obj\Debug\net8.0\staticwebassets.build.json
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.API\obj\Debug\net8.0\staticwebassets.development.json
