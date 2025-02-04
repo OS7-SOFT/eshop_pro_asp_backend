@@ -1,0 +1,6 @@
+@EShopPro.API_HostAddress = http://localhost:5264
+
+GET {{EShopPro.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
