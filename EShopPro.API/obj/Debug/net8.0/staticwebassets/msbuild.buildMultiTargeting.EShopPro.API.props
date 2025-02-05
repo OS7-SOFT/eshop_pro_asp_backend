@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\EShopPro.API.props" />
-</Project>
