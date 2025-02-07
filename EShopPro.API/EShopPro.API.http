@@ -1,6 +1,6 @@
-@EShopPro.API_HostAddress = http://localhost:5264
+@EShopPro.API_HostAddress = http://localhost:7265
 
-GET {{EShopPro.API_HostAddress}}/weatherforecast/
+GET {{EShopPro.API_HostAddress}}/swagger
 Accept: application/json
 
 ###

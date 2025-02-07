@@ -14,7 +14,7 @@ namespace EShopPro.Infrastructure
 {
     public static class ApplicationServiceRegistration
     {
-        public static void AddPersistenceLayer(this IServiceCollection services, IConfiguration configuration)
+        public static void AddInfrastructureLayer(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext(configuration);
             services.AddRepositories();

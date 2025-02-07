@@ -37,9 +37,9 @@ namespace EShopPro.Infrastructure.Repositories
             return entity;
         }
 
-        public Task UpdateAsync(T entity)
+        public Task UpdateAsync(Guid id,T entity)
         {
-            T exist = _dbContext.Set<T>().Find(entity);
+            T exist = _dbContext.Set<T>().Find(id);
             _dbContext.Entry(exist).CurrentValues.SetValues(entity);
 
             return Task.CompletedTask;
