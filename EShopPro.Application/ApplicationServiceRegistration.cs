@@ -3,6 +3,7 @@ using System.Reflection;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using CleanArchitectureAPI.Application.Common.Mappings;
+using EShopPro.Application.Behaviors;
 
 namespace CleanArchitectureAPI.Application
 {
@@ -28,6 +29,7 @@ namespace CleanArchitectureAPI.Application
         private static void AddValidators(this IServiceCollection services)
         {
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
         }
     }
 }

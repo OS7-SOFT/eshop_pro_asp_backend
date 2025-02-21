@@ -1,4 +1,5 @@
-﻿using EShopPro.Application.Features.Categories.Queries;
+﻿using EShopPro.Application.Features.Categories.Commands;
+using EShopPro.Application.Features.Categories.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,10 +17,17 @@ namespace EShopPro.API.Controllers
         }
 
         [HttpGet]
-    public async Task<IActionResult> GetCategories()
-    {
-        var products = await _mediator.Send(new GetAllCategoriesQuery());
-        return Ok(products);
-    }
+        public async Task<IActionResult> GetCategories()
+        {
+            var categories = await _mediator.Send(new GetAllCategoriesQuery());
+            return Ok(categories);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateCategory([FromBody] CreateCategoryCommand command)
+        {
+            var category = await _mediator.Send(command);
+            return CreatedAtAction(nameof(GetCategories), new { category=category }, command);
+        }
     }
 }

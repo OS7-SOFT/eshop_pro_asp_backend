@@ -15,20 +15,20 @@ namespace EShopPro.Application.Features.Categories.Queries
 {
     public record GetAllCategoriesQuery : IRequest<List<CategoryDto>>;
 
-    public class GetAllCategoriesHandlers : IRequestHandler<GetAllCategoriesQuery, List<CategoryDto>>
+    public class GetAllCategoriesHandler : IRequestHandler<GetAllCategoriesQuery, List<CategoryDto>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public GetAllCategoriesHandlers(IUnitOfWork unitOfWork, IMapper mapper)
+        public GetAllCategoriesHandler(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
         public async Task<List<CategoryDto>> Handle(GetAllCategoriesQuery request, CancellationToken cancellationToken)
         {
-            var products = await _unitOfWork.Repository<Category>().GetAllAsync();
-            return _mapper.Map<List<CategoryDto>>(products);
+            var categories = await _unitOfWork.Repository<Category>().GetAllAsync();
+            return _mapper.Map<List<CategoryDto>>(categories);
         }
     }
 }
