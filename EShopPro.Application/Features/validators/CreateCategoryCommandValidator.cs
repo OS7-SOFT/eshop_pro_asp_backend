@@ -12,6 +12,8 @@ namespace EShopPro.Application.Features.validators
     {
         public CreateCategoryCommandValidator()
         {
+            //CascadeMode = CascadeMode.Stop;
+
             RuleFor(command=>command.Name)
                 .NotEmpty()
                 .WithMessage("Name is Required");

@@ -1,5 +1,8 @@
-﻿using System.Net;
-
+﻿using System;
+using System.Net;
+using System.Text.Json;
+using EShopPro.Domain.Common;
+using FluentValidation;
 namespace EShopPro.API.Middlewares
 {
     public class ExceptionMiddleware
@@ -12,34 +15,48 @@ namespace EShopPro.API.Middlewares
             _next = next;
             _logger = logger;
         }
+        private static Task HandleExceptionAsync(HttpContext context, Exception exception)
+        {
+            context.Response.ContentType = "application/json";
 
+            var response = new ApiResponse<object>
+            {
+                Success = false,
+                Message = "opps there are server error",
+                Errors = new List<string> { exception.Message }
+            };
+
+            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+
+            var jsonResponse = JsonSerializer.Serialize(response);
+            return context.Response.WriteAsync(jsonResponse);
+        }
         public async Task Invoke(HttpContext context)
         {
             try
             {
                 await _next(context);
             }
-            catch (Exception ex)
+            catch (ValidationException ex)
             {
-                _logger.LogError(ex, "An unexpected error occurred.");
-                await HandleExceptionAsync(context, ex);
+                context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                context.Response.ContentType = "application/json";
+                
+                var errors = ex.Errors.Select(e => e.ErrorMessage).ToList();
+                
+                var response = new ApiResponse<object>
+                {
+                    Success = false,
+                    Message = "on occured errors",
+                    Errors = errors
+                };
+
+                var jsonResponse = JsonSerializer.Serialize(response);
+
+                await context.Response.WriteAsync(jsonResponse);
             }
         }
 
-        private static Task HandleExceptionAsync(HttpContext context, Exception exception)
-        {
-            var response = context.Response;
-            response.ContentType = "application/json";
-
-            var errorResponse = new
-            {
-                message = exception.Message,
-                statusCode = (int)HttpStatusCode.InternalServerError
-            };
-
-            response.StatusCode = (int)HttpStatusCode.InternalServerError;
-            return response.WriteAsJsonAsync(errorResponse);
-        }
     }
 
 }

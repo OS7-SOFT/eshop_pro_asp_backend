@@ -1,9 +1,3 @@
-D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.csproj.AssemblyReference.cache
-D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.AssemblyInfoInputs.cache
-D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.AssemblyInfo.cs
-D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.csproj.CoreCompileInputs.cache
-D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.sourcelink.json
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\EShopPro.Infrastructure.deps.json
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\EShopPro.Infrastructure.runtimeconfig.json
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\EShopPro.Infrastructure.dll
@@ -12,6 +6,12 @@ D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\EShopPro.Domain.dll
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\EShopPro.Application.pdb
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\EShopPro.Domain.pdb
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.csproj.AssemblyReference.cache
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.AssemblyInfoInputs.cache
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.AssemblyInfo.cs
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.csproj.CoreCompileInputs.cache
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.sourcelink.json
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.2C07E20E.Up2Date
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.dll
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\refint\EShopPro.Infrastructure.dll
