@@ -1,11 +1,8 @@
-﻿using EShopPro.Application.Intrefaces;
+﻿using EShopPro.Application.Common;
+using EShopPro.Application.Intrefaces;
 using EShopPro.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace EShopPro.Infrastructure.Repositories
 {
@@ -25,19 +22,53 @@ namespace EShopPro.Infrastructure.Repositories
             return await _dbContext.Set<T>().ToListAsync();
         }
 
+        public async Task<IQueryable<T>> ApplyFiltering(FilterCriteria<T> filter)
+        {
+            IQueryable<T> query = Entities;
+
+            if (filter != null)
+            {
+
+
+
+                var filterExpression = filter.GetFilterExpression();
+
+                if (filter.SortBy != null)
+                {
+
+                    query = filter.IsDescending
+                  ? query.OrderByDescending(e => EF.Property<object>(e, filter.SortBy))
+                  : query.OrderBy(e => EF.Property<object>(e, filter.SortBy));
+                }
+
+
+                if (filterExpression != null)
+                {
+
+                    query = query.Where(filterExpression);
+
+
+                }
+
+            }
+
+            return await Task.FromResult(query);
+        }
+
+
         public async Task<T> GetByIdAsync(Guid id)
         {
             return await _dbContext.Set<T>().FindAsync(id);
         }
 
-        public async  Task<T> AddAsync(T entity)
+        public async Task<T> AddAsync(T entity)
         {
-             await _dbContext.Set<T>().AddAsync(entity);
+            await _dbContext.Set<T>().AddAsync(entity);
 
             return entity;
         }
 
-        public Task UpdateAsync(Guid id,T entity)
+        public Task UpdateAsync(Guid id, T entity)
         {
             T exist = _dbContext.Set<T>().Find(id);
             _dbContext.Entry(exist).CurrentValues.SetValues(entity);
@@ -45,9 +76,9 @@ namespace EShopPro.Infrastructure.Repositories
             return Task.CompletedTask;
         }
 
-        public  Task DeleteAsync(Guid id)
+        public Task DeleteAsync(Guid id)
         {
-           _dbContext.Set<T>().FindAsync(id);
+            _dbContext.Set<T>().FindAsync(id);
 
             return Task.CompletedTask;
         }

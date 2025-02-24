@@ -11,7 +11,10 @@ using AutoMapper.QueryableExtensions;
 
 namespace EShopPro.Application.Features.Categories.Queries
 {
-    public class GetAllCategoriesQuery : PagedRequest, IRequest<ApiResponse<PagedList<CategoryDto>>>;
+    public class GetAllCategoriesQuery : PagedRequest, IRequest<ApiResponse<PagedList<CategoryDto>>>
+    {
+        public CategoryFilterCriteria? Filter { get; set; }
+    }
 
     public class GetAllCategoriesHandler : IRequestHandler<GetAllCategoriesQuery, ApiResponse<PagedList<CategoryDto>>>
     {
@@ -25,11 +28,14 @@ namespace EShopPro.Application.Features.Categories.Queries
         }
         public async Task<ApiResponse<PagedList<CategoryDto>>> Handle(GetAllCategoriesQuery request, CancellationToken cancellationToken)
         {
-          var query = _unitOfWork.Repository<Category>().Entities;
+            var filteredQuery = _unitOfWork.Repository<Category>().Entities;
 
-           var totalRecords = await query.CountAsync();
+            if (request.Filter is not null)
+                filteredQuery = await _unitOfWork.Repository<Category>().ApplyFiltering(request.Filter);
 
-            var categories = await query
+            var totalRecords = await filteredQuery.CountAsync();
+
+            var categories = await filteredQuery
             .Skip((request.PageNumber - 1) * request.PageSize)
             .Take(request.PageSize)
             .ProjectTo<CategoryDto>(_mapper.ConfigurationProvider)

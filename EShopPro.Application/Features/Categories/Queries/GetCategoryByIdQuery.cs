@@ -2,12 +2,7 @@
 using EShopPro.Application.Intrefaces;
 using EShopPro.Domain.Common;
 using MediatR;
-using System;
-using System.Collections.Generic;
 using EShopPro.Domain.Entities;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AutoMapper;
 
 namespace EShopPro.Application.Features.Categories.Queries
@@ -27,7 +22,7 @@ namespace EShopPro.Application.Features.Categories.Queries
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
 
-        public GetCategoryByIdHandler(IMapper mapper,IUnitOfWork unitOfWork)
+        public GetCategoryByIdHandler(IMapper mapper, IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
@@ -37,8 +32,9 @@ namespace EShopPro.Application.Features.Categories.Queries
         {
             var category = await _unitOfWork.Repository<Category>().GetByIdAsync(request.Id);
 
-            if (category == null) {
-                return new ApiResponse<CategoryDto>("No there any category by these id", "Category not Found");
+            if (category == null)
+            {
+                return new ApiResponse<CategoryDto>("", "Category not Found");
             }
 
             return new ApiResponse<CategoryDto>(_mapper.Map<CategoryDto>(category), "Categroy geted Successfully");
