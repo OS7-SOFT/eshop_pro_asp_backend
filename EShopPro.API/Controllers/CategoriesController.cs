@@ -18,12 +18,29 @@ namespace EShopPro.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetCategories()
+        public async Task<IActionResult> GetCategories([FromQuery] GetAllCategoriesQuery query)
         {
-            var categories = await _mediator.Send(new GetAllCategoriesQuery());
+            var response = await _mediator.Send(query);
 
+            if (!response.Success)
+            {
+                return NotFound(response);
+            }
 
-            return Ok(categories);
+            return Ok(response);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetCategoryById(Guid id)
+        {
+            var response = await _mediator.Send(new GetCategoryByIdQuery(id));
+
+            if (!response.Success)
+            {
+                return NotFound(response);
+            }
+
+            return Ok(response);
         }
 
         [HttpPost]
@@ -32,7 +49,7 @@ namespace EShopPro.API.Controllers
             var response = await _mediator.Send(command);
 
             if (response.Success)
-                return CreatedAtAction(nameof(GetCategories), new { category = response.Data }, command);
+                return CreatedAtAction(nameof(GetCategories), response);
 
             return BadRequest(response);
         }
