@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShopPro.Infrastructure", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShopPro.Application", "EShopPro.Application\EShopPro.Application.csproj", "{3FB1B37C-B4B3-4286-B3DA-C90D1EEB6207}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-ShopPro.Shared", "E-ShopPro.Shared\E-ShopPro.Shared.csproj", "{1E5E48F1-AF0B-4747-880E-2100F0559E67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3FB1B37C-B4B3-4286-B3DA-C90D1EEB6207}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FB1B37C-B4B3-4286-B3DA-C90D1EEB6207}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FB1B37C-B4B3-4286-B3DA-C90D1EEB6207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E5E48F1-AF0B-4747-880E-2100F0559E67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E5E48F1-AF0B-4747-880E-2100F0559E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E5E48F1-AF0B-4747-880E-2100F0559E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E5E48F1-AF0B-4747-880E-2100F0559E67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

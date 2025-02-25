@@ -1,7 +1,9 @@
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Application\bin\Debug\net8.0\EShopPro.Application.deps.json
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Application\bin\Debug\net8.0\EShopPro.Application.dll
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Application\bin\Debug\net8.0\EShopPro.Application.pdb
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Application\bin\Debug\net8.0\E-ShopPro.Shared.dll
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Application\bin\Debug\net8.0\EShopPro.Domain.dll
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Application\bin\Debug\net8.0\E-ShopPro.Shared.pdb
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Application\bin\Debug\net8.0\EShopPro.Domain.pdb
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Application\obj\Debug\net8.0\EShopPro.Application.csproj.AssemblyReference.cache
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Application\obj\Debug\net8.0\EShopPro.Application.GeneratedMSBuildEditorConfig.editorconfig

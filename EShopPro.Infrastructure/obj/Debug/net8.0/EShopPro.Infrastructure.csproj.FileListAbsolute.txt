@@ -2,9 +2,11 @@ D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\EShopPro.Infrastructure.runtimeconfig.json
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\EShopPro.Infrastructure.dll
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\EShopPro.Infrastructure.pdb
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\E-ShopPro.Shared.dll
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\EShopPro.Application.dll
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\EShopPro.Domain.dll
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\EShopPro.Application.pdb
+D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\E-ShopPro.Shared.pdb
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\bin\Debug\net8.0\EShopPro.Domain.pdb
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.csproj.AssemblyReference.cache
 D:\My_Portfolio\Website\Back-end\E-ShopPro\EShopPro.Infrastructure\obj\Debug\net8.0\EShopPro.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig

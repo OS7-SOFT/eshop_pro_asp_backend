@@ -5,13 +5,13 @@ using EShopPro.Application.Intrefaces;
 using EShopPro.Domain.Common;
 using EShopPro.Domain.Entities;
 using MediatR;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using AutoMapper.QueryableExtensions;
+using E_ShopPro.Shared.RequestFeatures;
 
 
 namespace EShopPro.Application.Features.Categories.Queries
 {
-    public class GetAllCategoriesQuery : PagedRequest, IRequest<ApiResponse<PagedList<CategoryDto>>>
+    public class GetAllCategoriesQuery : CategoryParameters, IRequest<ApiResponse<PagedList<CategoryDto>>>
     {
         public CategoryFilterCriteria? Filter { get; set; }
     }
